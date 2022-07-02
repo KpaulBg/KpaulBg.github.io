@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+.social{
+    position: fixed;
+    right: 0;
+    top:  35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon-facebook{
+    background: #2e406e;
+    border-radius: 1rem 0 0 0;
+}
+.icon-instagram{
+    background: #2b1e5886;
+}
+.icon-whatsapp{
+    background: #37f530;
+}
+.icon-tiktok{
+    background: #050e05;
+}
+.icon-mail{
+    background: #ec5a5a;
+    border-radius: 0 0 0 1rem;
+}
+.icon:hover{
+    padding-right: 3em;
+    border-radius: 1em 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42)
+}
+
+.contenedor{
+    padding: 50px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+}
+.titulo{
+    color:#09102a;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+
+
+header{
+width: 100%;
+height: 570px;
+background: #3C3B3F;  
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(180, 3%, 6%, 0.555), hsla(0, 0%, 3%, 0.767)), url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBoUKJjThv7PmwJba_oWqq1iKdrmswn33Z8rTg-nkUbUIAIAtd6G4WB_CA5QwevljE8aJaRl7q274BY6x5rtI1lM5rJR8b4g-W_3_LdYMPGnULModGEPYuoOBFAYN-i1YkmY9NNodJgeJpMD6klz2gDSEMYPpq52cKJymUu2YAJcMyLFGXQsWkm9oi/s320/WhatsApp%20Image%202022-06-30%20at%204.27.53%20PM.jpeg);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(0, 0%, 8%, 0.568), rgba(15, 15, 15, 0.767)), url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBoUKJjThv7PmwJba_oWqq1iKdrmswn33Z8rTg-nkUbUIAIAtd6G4WB_CA5QwevljE8aJaRl7q274BY6x5rtI1lM5rJR8b4g-W_3_LdYMPGnULModGEPYuoOBFAYN-i1YkmY9NNodJgeJpMD6klz2gDSEMYPpq52cKJymUu2YAJcMyLFGXQsWkm9oi/s320/WhatsApp%20Image%202022-06-30%20at%204.27.53%20PM.jpeg);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+}
+
+nav{
+    text-align: right;
+    padding-right: 50px;
+    align-items: center;
+}
+ nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 16px ;
+    margin-right: 18px;
+    align-items: center;
+}
+nav > a:hover{
+    text-decoration: underline;
+    color: #5d73c4;
+}
+.wave{
+    position: absolute;
+    bottom: 9%;
+    width: 100%;
+}
+header .textos-header{
+    display:flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+.contendeor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-about-us{
+    width: 45%;
+}
+.sobre-nosotros .contenido-texto{
+    width: 45%;
+}
+.contenido-texto h3{
+    margin-bottom: 15px;
+}
+.contenido-texto h3 span{
+    background:#09102a;
+    color:#fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+.contenido-texto p{
+    padding: 0 0 30px 30px;
+    font-weight: 300%;
+    text-align: justify;
+}
+
+.Galeria{
+    background: #f2f2f2;
+}
+.galeria-product{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 250px;;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5) ;
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: #333335b6;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+    width: 50px;
+}
+.hover-galeria p{
+    color: #fff;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1) ;
+}
+
+
+.Servicios{
+    background: #fff;
+    padding-bottom: 35px;
+}
+.servicio-cont{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+.servicio-ind img{
+    width: 90%;
+}
+.servicio-ind h3{
+    margin: 10px 10px;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+footer{
+    background: #414141;
+    padding: 60px 0px 30px 0px;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin:auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+.content-foo{
+    text-align: center;
+}
+.content-foo p{
+    color: #ccc;
+}
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #09102a;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 15px;
+    color:#e2d4d4;
+}
+
+@media screen and (max-width:800px){
+    .nav >a{
+        flex-direction: column;
+    }
+}
